@@ -7,7 +7,8 @@
     "postinstall": "yarn patch:apollo && yarn fix:vue-demi",
     "patch:apollo": "node scripts/vue-apollo-patch.js",
     "fix:vue-demi": "node node_modules/.bin/vue-demi-fix",
-    "codegen": "graphql-codegen --config codegen.yml"
+    "codegen": "graphql-codegen --config codegen.yml",
+    "format": "prettier --write **/*.{js,ts,vue,json}"
   },
   "dependencies": {
     "@apollo/client": "^3.3.6",
@@ -27,7 +28,9 @@
     "@vue/compiler-sfc": "^3.0.4",
     "autoprefixer": "^9",
     "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
     "postcss": "^7",
+    "prettier": "^2.2.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vite": "^1.0.0-rc.13"
   }

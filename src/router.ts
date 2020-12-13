@@ -9,7 +9,7 @@ export const router = createRouter({
   routes: [
     {
       path: '/',
-      component: Index
-    }
+      component: Index,
+    },
   ],
 })

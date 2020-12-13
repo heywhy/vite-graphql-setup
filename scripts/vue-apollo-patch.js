@@ -22,10 +22,14 @@ fs.writeFileSync(
 
 fs.writeFileSync(
   useQueryPath,
-  fs.readFileSync(useQueryPath, 'utf8').replace(/onServerPrefetch === null.*?\}\);/mus, '')
+  fs
+    .readFileSync(useQueryPath, 'utf8')
+    .replace(/onServerPrefetch === null.*?\}\);/msu, '')
 )
 
 fs.writeFileSync(
   vueApolloComposablePath,
-  fs.readFileSync(vueApolloComposablePath, 'utf8').replace(/vue_demi_5.onServerPrefetch === null.*?\}\);/mus, '')
+  fs
+    .readFileSync(vueApolloComposablePath, 'utf8')
+    .replace(/vue_demi_5.onServerPrefetch === null.*?\}\);/msu, '')
 )

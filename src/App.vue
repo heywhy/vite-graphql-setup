@@ -11,6 +11,6 @@ export default defineComponent({
   name: 'App',
   setup() {
     provide(DefaultApolloClient, apolloClient)
-  }
+  },
 })
 </script>
