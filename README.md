@@ -13,12 +13,18 @@ This repository contains a basic setup for [Tailwind](https://tailwindcss.com/),
 * [Apollo](https://www.apollographql.com/docs/)
 * [GraphQL Codegen](https://graphql-code-generator.com/)
 * [Yarn](https://yarnpkg.com/)
+* [Testing Library](https://testing-library.com/docs/vue-testing-library/intro)
 
 ## Quality Controls
 
 * [Prettier](https://prettier.io/)
 * [Commitlint](http://commitlint.js.org/)
 * [Husky](https://typicode.github.io/husky) & [Lintstaged](https://github.com/okonet/lint-staged) (to help keep the quality workflow seamless)
+
+## Scripts
+
+* `test`: runs tests defined in *__tests__* folder in the project.
+* `test:coverage`: runs tests with coverage report.
 
 ## Folder Structure
 
