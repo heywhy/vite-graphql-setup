@@ -56,6 +56,11 @@ Queries for each GraphQL types should be placed in here. Example, your GraphQL A
 
 The same convention that exists for GraphQL queries should be used for mutations also.
 
-| :info: **/public/,/src/assets**     |
-|:------------------------------------|
-| You should read up on [Vite](https://github.com/vitejs/vite) to give you an overview of how this folders are used. |
+| :information_source: **Information** |
+|:-------------------------------------|
+| You should read up on [Vite](https://github.com/vitejs/vite) to give you an overview of how this folders (**/public/,/src/assets**) are used. |
+
+
+## TODO
+
+- [ ] GraphQL testing support
