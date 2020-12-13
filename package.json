@@ -1,0 +1,34 @@
+{
+  "name": "vite-graphql-setup",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "NODE_ENV=production vite build",
+    "postinstall": "yarn patch:apollo && yarn fix:vue-demi",
+    "patch:apollo": "node scripts/vue-apollo-patch.js",
+    "fix:vue-demi": "node node_modules/.bin/vue-demi-fix",
+    "codegen": "graphql-codegen --config codegen.yml"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.3.6",
+    "@vue/apollo-composable": "^4.0.0-alpha.12",
+    "graphql": "^15.4.0",
+    "graphql-tag": "^2.11.0",
+    "vue": "^3.0.4",
+    "vue-router": "^4.0.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@graphql-codegen/cli": "^1.19.4",
+    "@graphql-codegen/introspection": "^1.18.1",
+    "@graphql-codegen/typescript": "^1.19.0",
+    "@graphql-codegen/typescript-operations": "^1.17.12",
+    "@vue/compiler-sfc": "^3.0.4",
+    "autoprefixer": "^9",
+    "husky": "^4.3.6",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "vite": "^1.0.0-rc.13"
+  }
+}
