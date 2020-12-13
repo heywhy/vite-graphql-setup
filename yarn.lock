@@ -1823,10 +1823,10 @@
     lodash "^4.17.15"
     redent "^3.0.0"
 
-"@testing-library/vue@^6.3.0":
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/@testing-library/vue/-/vue-6.3.0.tgz#b839c52d6a9f74b8359f8326f65249988a947232"
-  integrity sha512-2QGkIEZdfyoPqfXu9mN3G6LCksy7l6lOh1GCTzgCrq1D/4UslBvgGdqo2MiL4ol8cb5VNltmii7XQcPRxJz91Q==
+"@testing-library/vue@^6.3.1":
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/vue/-/vue-6.3.1.tgz#130a62fb9565bd78dad9ed8e56430181fb8d9d35"
+  integrity sha512-cLbIIQX4ex6Up+30Fvd19co08BSfP9l9TQaLMemq+2ngzqxohLIMXujOdw7VzdZNSbBDv+ub67yLrM2mSw86GA==
   dependencies:
     "@babel/runtime" "^7.12.1"
     "@testing-library/dom" "^7.28.1"
