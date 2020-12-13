@@ -12,6 +12,7 @@ This repository contains a basic setup for [Tailwind](https://tailwindcss.com/),
 * [Vue Apollo](https://v4.apollo.vuejs.org/)
 * [Apollo](https://www.apollographql.com/docs/)
 * [GraphQL Codegen](https://graphql-code-generator.com/)
+* [Yarn](https://yarnpkg.com/)
 
 ## Quality Controls
 
