@@ -15,6 +15,7 @@
       "src/*": ["src/*"],
       "test/*": ["test/*"]
     },
+    "resolveJsonModule": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true
   }

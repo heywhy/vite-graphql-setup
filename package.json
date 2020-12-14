@@ -21,6 +21,7 @@
     "vue-router": "^4.0.1"
   },
   "devDependencies": {
+    "@apollo/link-schema": "^2.0.0-beta.3",
     "@babel/preset-env": "^7.12.10",
     "@babel/preset-typescript": "^7.12.7",
     "@commitlint/cli": "^11.0.0",
@@ -29,6 +30,7 @@
     "@graphql-codegen/introspection": "^1.18.1",
     "@graphql-codegen/typescript": "^1.19.0",
     "@graphql-codegen/typescript-operations": "^1.17.12",
+    "@graphql-tools/mock": "^7.0.0",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/vue": "^6.3.1",
     "@types/jest": "^26.0.19",

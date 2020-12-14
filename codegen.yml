@@ -1,5 +1,6 @@
 overwrite: true
-schema: "http://localhost/graphql"
+schema:
+  - ./src/__tests__/schema.graphql
 documents: "src/graphql/**/*.ts"
 generates:
   src/graphql/generated/types.ts:

@@ -1,9 +1,11 @@
 import gql from 'graphql-tag'
 
 export const ExampleQuery = gql`
-  mutation exampleQuery {
+  query exampleQuery {
     exampleQuery {
       id
+      name
+      testing
     }
   }
 `

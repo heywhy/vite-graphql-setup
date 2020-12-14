@@ -1,0 +1,20 @@
+directive @client on FIELD
+
+extend type Query {
+  exampleQuery: ExampleQuery
+}
+
+extend type Mutation {
+  exampleMutation(input: ExampleMutationInput!): ExampleQuery
+}
+
+type ExampleQuery {
+  id: ID!
+  name: String!
+  testing: Boolean!
+}
+
+input ExampleMutationInput {
+  name: String
+  testing: Boolean
+}
