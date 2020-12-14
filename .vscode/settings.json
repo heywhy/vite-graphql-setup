@@ -1,0 +1,12 @@
+{
+  "vetur.experimental.templateInterpolationService": true,
+  "vetur.format.defaultFormatter.ts": "vscode-typescript",
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.validation.template": false,
+  "vetur.validation.templateProps": true,
+  "vetur.grammar.customBlocks": {
+    "style": "PostCSS",
+    "docs": "md",
+    "i18n": "json"
+  }
+}

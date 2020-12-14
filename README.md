@@ -60,6 +60,18 @@ The same convention that exists for GraphQL queries should be used for mutations
 |:-------------------------------------|
 | You should read up on [Vite](https://github.com/vitejs/vite) to give you an overview of how this folders (**/public/,/src/assets**) are used. |
 
+## Recommended VSCode Extensions
+
+* [Name: Apollo GraphQL](https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo)
+* [Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits)
+* [Cucumber (Gherkin) Full Support](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete)
+* [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
+* [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+* [PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss)
+* [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+* [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+* [Vue Peek](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vue-peek)
+
 
 ## TODO
 
