@@ -75,5 +75,5 @@ The same convention that exists for GraphQL queries should be used for mutations
 
 ## TODO
 
-- [ ] GraphQL testing support
+- [X] GraphQL testing support
 - [ ] E2E using Cypress (Gherkins & Cucumber)
