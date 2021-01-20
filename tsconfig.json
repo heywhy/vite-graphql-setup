@@ -1,22 +1,28 @@
 {
   "compilerOptions": {
-    "target": "ESNEXT",
-    "module": "ESNEXT",
-    "allowJs": true,
-    "checkJs": true,
-    "removeComments": false,
-    // "isolatedModules": true,
-    "outDir": "./dist",
-    "strict": true,
-    "noImplicitAny": false,
+    "target": "esnext",
+    "module": "esnext",
     "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "sourceMap": true,
+    "lib": ["esnext", "dom"],
+    "types": ["vite/client"],
+    "plugins": [{ "name": "@vuedx/typescript-plugin-vue" }],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "baseUrl": "./",
     "paths": {
       "src/*": ["src/*"],
       "test/*": ["test/*"]
-    },
-    "resolveJsonModule": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
-  }
+    }
+  },
+  "include": [
+    "./*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ]
 }
