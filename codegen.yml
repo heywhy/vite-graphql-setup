@@ -1,7 +1,13 @@
 overwrite: true
 schema:
   - ./src/__tests__/schema.graphql
-documents: 'src/graphql/**/*.ts'
+documents:
+  - ./src/graphql/fragments/**/!(*.generated).ts
+  - ./src/graphql/mutations/**/!(*.generated).ts
+  - ./src/graphql/queries/**/!(*.generated).ts
+hooks:
+  afterAllFileWrite:
+    - prettier --write
 generates:
   ./src/graphql/types.d.ts:
     plugins:
