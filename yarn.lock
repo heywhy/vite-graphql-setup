@@ -1630,6 +1630,14 @@
   dependencies:
     tiny-lru "7.0.6"
 
+"@graphql-codegen/add@^3.1.1":
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/add/-/add-3.1.1.tgz#e161ff1c7cdf74ce20b32f75f640f9592b9a18ca"
+  integrity sha512-XkVwcqosa0CVBlL1HaQT0gp+EUfhuQE3LzrEpzMQLwchxaj/NPVYtOJL6MUHaYDsHzLqxWrufjfbeB3y2NQgRw==
+  dependencies:
+    "@graphql-codegen/plugin-helpers" "^2.3.2"
+    tslib "~2.3.0"
+
 "@graphql-codegen/cli@^2.6.2":
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/cli/-/cli-2.6.2.tgz#a9aa4656141ee0998cae8c7ad7d0bf9ca8e0c9ae"
@@ -1694,6 +1702,18 @@
     "@graphql-codegen/plugin-helpers" "^2.3.2"
     tslib "~2.3.0"
 
+"@graphql-codegen/near-operation-file-preset@^2.2.9":
+  version "2.2.9"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/near-operation-file-preset/-/near-operation-file-preset-2.2.9.tgz#831cb7f024fc76778fce808281fe9db859cc4875"
+  integrity sha512-ytvI5wDq+92sGp+h+HEi4+biDNWsgKdRJVm5P1wzzFuc67qTPB1EipbJF4oUqSqtV6kaTu3mdHPf5yU0SWusSw==
+  dependencies:
+    "@graphql-codegen/add" "^3.1.1"
+    "@graphql-codegen/plugin-helpers" "^2.4.0"
+    "@graphql-codegen/visitor-plugin-common" "2.7.4"
+    "@graphql-tools/utils" "^8.5.2"
+    parse-filepath "^1.0.2"
+    tslib "~2.3.0"
+
 "@graphql-codegen/plugin-helpers@^2.3.2", "@graphql-codegen/plugin-helpers@^2.4.0", "@graphql-codegen/plugin-helpers@^2.4.1":
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/plugin-helpers/-/plugin-helpers-2.4.2.tgz#e4f6b74dddcf8a9974fef5ce48562ae0980f9fed"
@@ -1724,6 +1744,17 @@
     "@graphql-codegen/typescript" "^2.4.8"
     "@graphql-codegen/visitor-plugin-common" "2.7.4"
     auto-bind "~4.0.0"
+    tslib "~2.3.0"
+
+"@graphql-codegen/typescript-vue-apollo@^3.2.9":
+  version "3.2.9"
+  resolved "https://registry.yarnpkg.com/@graphql-codegen/typescript-vue-apollo/-/typescript-vue-apollo-3.2.9.tgz#d7b7a13fa4ae0f65cae422659419b8803f707837"
+  integrity sha512-tGNwMLGshOOfTIh/L1+XXvMUwzta7d4n1jMxDszTIL2pXRA0RUvjHsPdWHOksvsUQ9w43LX0zbB/qnFw3IKZmA==
+  dependencies:
+    "@graphql-codegen/plugin-helpers" "^2.4.0"
+    "@graphql-codegen/visitor-plugin-common" "2.7.4"
+    auto-bind "~4.0.0"
+    change-case-all "1.0.14"
     tslib "~2.3.0"
 
 "@graphql-codegen/typescript@^2.4.8":

@@ -3,10 +3,29 @@ schema:
   - ./src/__tests__/schema.graphql
 documents: "src/graphql/**/*.ts"
 generates:
-  src/graphql/generated/types.ts:
+  ./src/graphql/types.d.ts:
     plugins:
-      - "typescript"
-      - "typescript-operations"
-  src/graphql/generated/graphql.schema.json:
+      - typescript
+    config:
+      constEnums: true
+      enumsAsConst: true
+      enumsAsTypes: true
+      immutableTypes: true
+      useImplementingTypes: true
+  ./src/graphql:
+    preset: near-operation-file
+    presetConfig:
+      baseTypesPath: types.d.ts
+      extension: .generated.ts
+    config:
+      addDocBlocks: false
+      pureMagicComment: true
+      documentMode: external
+      importDocumentNodeExternallyFrom: near-operation-file
+      addOperationExport: true
+    plugins:
+      - typescript-operations
+      - typescript-vue-apollo
+  ./src/graphql/generated/graphql.schema.json:
     plugins:
       - "introspection"
