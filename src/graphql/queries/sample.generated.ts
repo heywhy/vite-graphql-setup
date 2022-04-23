@@ -2,7 +2,7 @@ import * as Types from '../types.d'
 
 import * as Operations from './sample'
 import * as VueApolloComposable from '@vue/apollo-composable'
-import * as VueCompositionApi from '@vue/composition-api'
+import * as VueCompositionApi from 'vue'
 export type ReactiveFunction<TParam> = () => TParam
 export type ExampleQueryQueryVariables = Types.Exact<{ [key: string]: never }>
 
@@ -16,7 +16,7 @@ export type ExampleQueryQuery = {
   } | null
 }
 
-export declare const exampleQuery: import('graphql').DocumentNode
+export declare const ExampleQuery: import('graphql').DocumentNode
 
 export function useExampleQueryQuery(
   options:
@@ -40,7 +40,7 @@ export function useExampleQueryQuery(
   return VueApolloComposable.useQuery<
     ExampleQueryQuery,
     ExampleQueryQueryVariables
-  >(Operations.exampleQuery, {}, options)
+  >(Operations.ExampleQuery, {}, options)
 }
 export function useExampleQueryLazyQuery(
   options:
@@ -64,7 +64,7 @@ export function useExampleQueryLazyQuery(
   return VueApolloComposable.useLazyQuery<
     ExampleQueryQuery,
     ExampleQueryQueryVariables
-  >(Operations.exampleQuery, {}, options)
+  >(Operations.ExampleQuery, {}, options)
 }
 export type ExampleQueryQueryCompositionFunctionResult =
   VueApolloComposable.UseQueryReturn<

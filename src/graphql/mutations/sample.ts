@@ -1,7 +1,7 @@
 import gql from 'graphql-tag'
 
 export const ExampleMutation = gql`
-  mutation exampleMutation($input: ExampleMutationInput!) {
+  mutation ExampleMutation($input: ExampleMutationInput!) {
     exampleMutation(input: $input) {
       id
       name

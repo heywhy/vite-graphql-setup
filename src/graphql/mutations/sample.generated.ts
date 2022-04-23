@@ -2,7 +2,7 @@ import * as Types from '../types.d'
 
 import * as Operations from './sample'
 import * as VueApolloComposable from '@vue/apollo-composable'
-import * as VueCompositionApi from '@vue/composition-api'
+import * as VueCompositionApi from 'vue'
 export type ReactiveFunction<TParam> = () => TParam
 export type ExampleMutationMutationVariables = Types.Exact<{
   input: Types.ExampleMutationInput
@@ -18,7 +18,7 @@ export type ExampleMutationMutation = {
   } | null
 }
 
-export declare const exampleMutation: import('graphql').DocumentNode
+export declare const ExampleMutation: import('graphql').DocumentNode
 
 export function useExampleMutationMutation(
   options:
@@ -36,7 +36,7 @@ export function useExampleMutationMutation(
   return VueApolloComposable.useMutation<
     ExampleMutationMutation,
     ExampleMutationMutationVariables
-  >(Operations.exampleMutation, options)
+  >(Operations.ExampleMutation, options)
 }
 export type ExampleMutationMutationCompositionFunctionResult =
   VueApolloComposable.UseMutationReturn<

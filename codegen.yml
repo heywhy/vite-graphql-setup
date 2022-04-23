@@ -29,6 +29,7 @@ generates:
       documentMode: external
       importDocumentNodeExternallyFrom: near-operation-file
       addOperationExport: true
+      vueCompositionApiImportFrom: vue
     plugins:
       - typescript-operations
       - typescript-vue-apollo
