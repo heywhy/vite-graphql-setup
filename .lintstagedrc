@@ -1,3 +1,8 @@
 {
-  "**/*.{js,ts,vue,json}": "prettier --write"
+  "**/*.{ts,tsx,vue,css,json}": [
+    "prettier --config ./.prettierrc.js -w"
+  ],
+  "**/*.json": [
+    "jsonsort -s"
+  ]
 }

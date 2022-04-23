@@ -2,13 +2,15 @@
   "name": "vite-graphql-setup",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
     "build": "vuedx-typecheck . && vite build",
     "codegen": "graphql-codegen --config codegen.yml",
+    "dev": "vite",
     "format": "prettier --write **/*.{js,ts,vue,json}",
+    "prepare": "husky install",
+    "prettier:check": "prettier --list-different \"**/*.{ts,tsx,json,css}\"",
+    "prettier:write": "prettier --config ./.prettierrc.js -w .",
     "test": "jest",
-    "test:coverage": "jest --coverage",
-    "prepare": "husky install"
+    "test:coverage": "jest --coverage"
   },
   "dependencies": {
     "@apollo/client": "^3.5.10",
@@ -46,6 +48,7 @@
     "jest": "^27.5.1",
     "jest-serializer-vue": "^2.0.2",
     "jest-transform-stub": "^2.0.0",
+    "json-sort-cli": "^2.0.13",
     "lint-staged": "^12.4.0",
     "postcss": "^8.4.12",
     "postcss-import": "^14.1.0",
