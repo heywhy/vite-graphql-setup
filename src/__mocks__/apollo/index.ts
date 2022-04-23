@@ -77,6 +77,6 @@ export const withApollo = (
   opts: ApolloWrapperOptions = {}
 ) => {
   return defineComponent(
-    props => () => h(Wrapper, opts, () => h(component, props))
+    (props) => () => h(Wrapper, opts, () => h(component, props))
   )
 }

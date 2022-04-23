@@ -1,7 +1,7 @@
 overwrite: true
 schema:
   - ./src/__tests__/schema.graphql
-documents: "src/graphql/**/*.ts"
+documents: 'src/graphql/**/*.ts'
 generates:
   ./src/graphql/types.d.ts:
     plugins:
@@ -28,4 +28,4 @@ generates:
       - typescript-vue-apollo
   ./src/graphql/generated/graphql.schema.json:
     plugins:
-      - "introspection"
+      - 'introspection'

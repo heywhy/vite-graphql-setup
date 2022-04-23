@@ -1,4 +1,9 @@
-import { ApolloClient, createHttpLink, HttpOptions, InMemoryCache } from '@apollo/client/core'
+import {
+  ApolloClient,
+  createHttpLink,
+  HttpOptions,
+  InMemoryCache,
+} from '@apollo/client/core'
 import { GRAPHQL_API_URL } from '../config'
 
 const createLink = (opts: HttpOptions = {}) => {

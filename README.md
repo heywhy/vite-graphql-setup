@@ -4,27 +4,27 @@ This repository contains a basic setup for [Tailwind](https://tailwindcss.com/),
 
 ## Technologies
 
-* [Tailwind](https://tailwindcss.com/)
-* [Vue 3](https://v3.vuejs.org/)
-* [Vite](https://github.com/vitejs/vite)
-* [Vue Router](https://next.router.vuejs.org/)
-* [Typescript](https://www.typescriptlang.org/)
-* [Vue Apollo](https://v4.apollo.vuejs.org/)
-* [Apollo](https://www.apollographql.com/docs/)
-* [GraphQL Codegen](https://graphql-code-generator.com/)
-* [Yarn](https://yarnpkg.com/)
-* [Testing Library](https://testing-library.com/docs/vue-testing-library/intro)
+- [Tailwind](https://tailwindcss.com/)
+- [Vue 3](https://v3.vuejs.org/)
+- [Vite](https://github.com/vitejs/vite)
+- [Vue Router](https://next.router.vuejs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Vue Apollo](https://v4.apollo.vuejs.org/)
+- [Apollo](https://www.apollographql.com/docs/)
+- [GraphQL Codegen](https://graphql-code-generator.com/)
+- [Yarn](https://yarnpkg.com/)
+- [Testing Library](https://testing-library.com/docs/vue-testing-library/intro)
 
 ## Quality Controls
 
-* [Prettier](https://prettier.io/)
-* [Commitlint](http://commitlint.js.org/)
-* [Husky](https://typicode.github.io/husky) & [Lintstaged](https://github.com/okonet/lint-staged) (to help keep the quality workflow seamless)
+- [Prettier](https://prettier.io/)
+- [Commitlint](http://commitlint.js.org/)
+- [Husky](https://typicode.github.io/husky) & [Lintstaged](https://github.com/okonet/lint-staged) (to help keep the quality workflow seamless)
 
 ## Scripts
 
-* `test`: runs tests defined in *__tests__* folder in the project.
-* `test:coverage`: runs tests with coverage report.
+- `test`: runs tests defined in _**tests**_ folder in the project.
+- `test:coverage`: runs tests with coverage report.
 
 ## Folder Structure
 
@@ -56,24 +56,23 @@ Queries for each GraphQL types should be placed in here. Example, your GraphQL A
 
 The same convention that exists for GraphQL queries should be used for mutations also.
 
-| :information_source: **Information** |
-|:-------------------------------------|
+| :information_source: **Information**                                                                                                          |
+| :-------------------------------------------------------------------------------------------------------------------------------------------- |
 | You should read up on [Vite](https://github.com/vitejs/vite) to give you an overview of how this folders (**/public/,/src/assets**) are used. |
 
 ## Recommended VSCode Extensions
 
-* [Name: Apollo GraphQL](https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo)
-* [Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits)
-* [Cucumber (Gherkin) Full Support](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete)
-* [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
-* [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-* [PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss)
-* [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-* [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
-* [Vue Peek](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vue-peek)
-
+- [Name: Apollo GraphQL](https://marketplace.visualstudio.com/items?itemName=apollographql.vscode-apollo)
+- [Conventional Commits](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits)
+- [Cucumber (Gherkin) Full Support](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete)
+- [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
+- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+- [PostCSS Language Support](https://marketplace.visualstudio.com/items?itemName=csstools.postcss)
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+- [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+- [Vue Peek](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vue-peek)
 
 ## TODO
 
-- [X] GraphQL testing support
+- [x] GraphQL testing support
 - [ ] E2E using Cypress (Gherkins & Cucumber)
