@@ -1,13 +1,13 @@
 ## Description
 
-This repository contains a basic setup for [Tailwind](https://tailwindcss.com/), [Vue 3](https://v3.vuejs.org/) using [Vite](https://github.com/vitejs/vite) for bundling and also a basic structure for GraphQL support using [Vue Apollo](https://v4.apollo.vuejs.org/)
+This repository contains a basic setup for [Tailwind](https://tailwindcss.com/), [Vue 3](https://vuejs.org/) using [Vite](https://github.com/vitejs/vite) for bundling and also a basic structure for GraphQL support using [Vue Apollo](https://v4.apollo.vuejs.org/)
 
 ## Technologies
 
 - [Tailwind](https://tailwindcss.com/)
-- [Vue 3](https://v3.vuejs.org/)
+- [Vue 3](https://vuejs.org/)
 - [Vite](https://github.com/vitejs/vite)
-- [Vue Router](https://next.router.vuejs.org/)
+- [Vue Router](https://router.vuejs.org/)
 - [Typescript](https://www.typescriptlang.org/)
 - [Vue Apollo](https://v4.apollo.vuejs.org/)
 - [Apollo](https://www.apollographql.com/docs/)
@@ -23,7 +23,12 @@ This repository contains a basic setup for [Tailwind](https://tailwindcss.com/),
 
 ## Scripts
 
-- `test`: runs tests defined in _**tests**_ folder in the project.
+- `build`: build codebase for deployment.
+- `codegen`: generate typescript types from GraphQL api.
+- `dev`: run project in dev mode.
+- `prettier:check`: check codebase for files not formatted.
+- `prettier:write`: format the codebase.
+- `test`: runs tests defined in _**tests**_ and \__test\__ folder in the project.
 - `test:coverage`: runs tests with coverage report.
 
 ## Folder Structure
@@ -38,7 +43,7 @@ Reusable components used throughout the application should be situated here.
 
 ### src/hooks
 
-You should place your application hooks in this folder with the advent of [Composition API](https://v3.vuejs.org/api/composition-api.html#composition-api) in Vue 3.
+You should place your application hooks in this folder with the advent of [Composition API](https://vuejs.org/api/composition-api.html#composition-api) in Vue 3.
 
 ### src/pages
 

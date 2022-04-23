@@ -5,9 +5,8 @@
     "build": "vuedx-typecheck . && vite build",
     "codegen": "graphql-codegen --config codegen.yml",
     "dev": "vite",
-    "format": "prettier --write **/*.{js,ts,vue,json}",
     "prepare": "husky install",
-    "prettier:check": "prettier --list-different \"**/*.{ts,tsx,json,css}\"",
+    "prettier:check": "prettier --list-different \"**/*.{ts,tsx,vue,css,json}\"",
     "prettier:write": "prettier --config ./.prettierrc.js -w .",
     "test": "jest",
     "test:coverage": "jest --coverage"
