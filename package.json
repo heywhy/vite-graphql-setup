@@ -2,7 +2,7 @@
   "name": "vite-graphql-setup",
   "version": "0.0.0",
   "scripts": {
-    "build": "vuedx-typecheck . && vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "codegen": "graphql-codegen --config codegen.yml",
     "dev": "vite",
     "prepare": "husky install",
@@ -37,8 +37,6 @@
     "@vitejs/plugin-vue": "^2.3.1",
     "@vue/compiler-sfc": "^3.2.33",
     "@vue/vue3-jest": "^27.0.0-alpha.4",
-    "@vuedx/typecheck": "^0.7.4",
-    "@vuedx/typescript-plugin-vue": "^0.7.4",
     "autoprefixer": "^10.4.4",
     "babel-core": "^7.0.0-bridge.0",
     "cross-fetch": "^3.1.5",
@@ -55,6 +53,7 @@
     "tailwindcss": "^3.0.24",
     "ts-jest": "^27.1.4",
     "typescript": "^4.6.3",
-    "vite": "^2.9.5"
+    "vite": "^2.9.5",
+    "vue-tsc": "^0.34.10"
   }
 }
