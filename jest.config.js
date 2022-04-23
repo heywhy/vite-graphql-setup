@@ -62,6 +62,11 @@ module.exports = {
       babelConfig: '<rootDir>/babel.config.js',
       tsconfig: '<rootDir>/tsconfig.json',
     },
+    'vue-jest': {
+      compilerOptions: {
+        propsDestructureTransform: true,
+      },
+    },
   },
 
   // The maximum amount of workers used to run your tests. Can be specified as % or a number. E.g. maxWorkers: 10% will use 10% of your CPU amount + 1 as the maximum worker number. maxWorkers: 2 will use a maximum of 2 workers.
@@ -171,11 +176,10 @@ module.exports = {
   // A map from regular expressions to paths to transformers
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
-    '.*\\.(vue)$': 'vue-jest',
+    '.*\\.(vue)$': '@vue/vue3-jest',
     '^.+\\.jsx?$': 'babel-jest',
-    '.+\\.(css|styl|less|sass|scss|png|jpg|svg|ttf|woff|woff2)$': require.resolve(
-      'jest-transform-stub'
-    ),
+    '.+\\.(css|styl|less|sass|scss|png|jpg|svg|ttf|woff|woff2)$':
+      require.resolve('jest-transform-stub'),
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation

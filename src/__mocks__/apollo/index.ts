@@ -9,7 +9,7 @@ import {
 import { DefaultApolloClient } from '@vue/apollo-composable'
 import { buildClientSchema, printSchema } from 'graphql/utilities'
 import { ApolloClient, InMemoryCache } from '@apollo/client/core'
-import { SchemaLink } from '@apollo/link-schema'
+import { SchemaLink } from '@apollo/client/link/schema'
 import { makeExecutableSchema } from '@graphql-tools/schema'
 import { addMocksToSchema, IMockFn } from '@graphql-tools/mock'
 import introspectionResult from 'src/graphql/generated/graphql.schema.json'
@@ -76,7 +76,7 @@ export const withApollo = (
   component: VueComponent,
   opts: ApolloWrapperOptions = {}
 ) => {
-  return defineComponent(props => () =>
-    h(Wrapper, opts, () => h(component, props))
+  return defineComponent(
+    props => () => h(Wrapper, opts, () => h(component, props))
   )
 }
